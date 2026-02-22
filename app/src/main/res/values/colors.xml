@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_background">#C62828</color>
+    <color name="splash_background_dark">#1C2025</color>
+    <color name="nadjah_red_600">#C62828</color>
+    <color name="nadjah_gold_600">#F9A825</color>
+    <color name="nadjah_charcoal_800">#2D3140</color>
+    <color name="window_background">#FFFFFF</color>
+    <color name="notification_color">#C62828</color>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    data_extraction_rules.xml — Android 12+ (API 31+)
+
+    Controls what the system can extract from the app during backup/restore
+    and content capture (e.g. Google Assistant, Activity Recognition).
+
+    Reference: https://developer.android.com/guide/topics/data/autobackup#IncludingFiles
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude sensitive auth tokens stored in DataStore -->
+        <exclude domain="file" path="datastore/"/>
+        <!-- Exclude the Room database (server is the source of truth) -->
+        <exclude domain="database" path="nadjah_database"/>
+        <!-- Exclude downloaded lesson/video files -->
+        <exclude domain="file" path="downloads/"/>
+        <!-- Exclude ExoPlayer offline cache -->
+        <exclude domain="cache" path="exoplayer/"/>
+    </cloud-backup>
+
+    <device-transfer>
+        <!-- Same exclusions apply for device-to-device transfer -->
+        <exclude domain="file" path="datastore/"/>
+        <exclude domain="database" path="nadjah_database"/>
+        <exclude domain="file" path="downloads/"/>
+        <exclude domain="cache" path="exoplayer/"/>
+    </device-transfer>
+</data-extraction-rules>

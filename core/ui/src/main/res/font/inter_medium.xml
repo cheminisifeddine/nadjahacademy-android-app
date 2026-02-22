@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder font descriptor for Inter Medium.
+    Replace this file with the actual inter_medium.ttf binary file.
+    Download: https://fonts.google.com/specimen/Inter
+-->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        android:font="@font/inter_regular"
+        android:fontWeight="500"
+        android:fontStyle="normal"
+        app:font="@font/inter_regular"
+        app:fontWeight="500"
+        app:fontStyle="normal" />
+</font-family>

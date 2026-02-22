@@ -1,0 +1,31 @@
+# Built application files
+*.apk
+*.aar
+*.aab
+
+# Gradle
+.gradle/
+build/
+**/build/
+local.properties
+*.iml
+
+# Android Studio
+.idea/
+*.iws
+*.ipr
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keys (never commit)
+*.jks
+*.keystore
+google-services.json
+
+# Kotlin
+*.class
+
+# OS files
+.DS_Store
+Thumbs.db

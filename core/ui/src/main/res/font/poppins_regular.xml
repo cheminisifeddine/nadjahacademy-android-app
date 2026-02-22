@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder font descriptor for Poppins Regular.
+    Replace with actual poppins_regular.ttf binary file.
+    Download: https://fonts.google.com/specimen/Poppins
+-->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+</font-family>

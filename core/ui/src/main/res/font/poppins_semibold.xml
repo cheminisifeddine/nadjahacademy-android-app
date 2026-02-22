@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder font descriptor for Poppins SemiBold.
+    Replace this file with the actual poppins_semibold.ttf binary file.
+    Download: https://fonts.google.com/specimen/Poppins
+-->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        android:font="@font/poppins_regular"
+        android:fontWeight="600"
+        android:fontStyle="normal"
+        app:font="@font/poppins_regular"
+        app:fontWeight="600"
+        app:fontStyle="normal" />
+</font-family>

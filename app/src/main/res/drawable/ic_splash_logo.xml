@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ic_splash_logo.xml — Nadjah Academy splash screen icon
+    Used as the windowSplashScreenAnimatedIcon in themes.xml.
+
+    A stylised graduation cap (mortarboard) in the brand blue colour,
+    sized to 108dp as recommended for adaptive icon foreground layers.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer rounded square background tile (safe zone = 72dp centred) -->
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M18,18 L90,18 A6,6 0 0 1 96,24 L96,84 A6,6 0 0 1 90,90 L18,90 A6,6 0 0 1 12,84 L12,24 A6,6 0 0 1 18,18 Z" />
+
+    <!-- Mortarboard brim (flat horizontal rectangle) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,48 L78,48 L78,54 L30,54 Z" />
+
+    <!-- Cap top (diamond / rhombus) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,34 L78,48 L54,54 L30,48 Z" />
+
+    <!-- Left tassel string descending from brim -->
+    <path
+        android:fillColor="#E0F2FE"
+        android:pathData="M68,54 L68,68 Q68,72 64,72 L64,72 Q60,72 60,68 L60,54 Z"
+        android:strokeWidth="0" />
+
+    <!-- Tassel ball -->
+    <path
+        android:fillColor="#FCD34D"
+        android:pathData="M64,68 m-4,0 a4,4 0 1 0 8,0 a4,4 0 1 0 -8,0" />
+
+</vector>

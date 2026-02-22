@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ic_launcher_foreground.xml — Adaptive icon foreground layer
+    Used alongside ic_launcher_background (or a colour) in res/mipmap-anydpi-v26/ic_launcher.xml.
+    The "safe zone" for adaptive icons is a 66dp circle centred in the 108dp canvas.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Graduation cap — white, centred in safe zone -->
+
+    <!-- Brim -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,54 L80,54 L80,61 L28,61 Z" />
+
+    <!-- Cap top diamond -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,38 L80,54 L54,61 L28,54 Z" />
+
+    <!-- Tassel cord -->
+    <path
+        android:fillColor="#E0F2FE"
+        android:pathData="M70,61 L70,74 Q70,78 66,78 L66,78 Q62,78 62,74 L62,61 Z" />
+
+    <!-- Tassel ball (amber) -->
+    <path
+        android:fillColor="#FCD34D"
+        android:pathData="M66,74 m-4,0 a4,4 0 1 0 8,0 a4,4 0 1 0 -8,0" />
+
+</vector>

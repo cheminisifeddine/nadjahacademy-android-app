@@ -15,8 +15,15 @@ import retrofit2.Retrofit
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
-// Base URL injected via BuildConfig; we use a constant here that can be overridden
-private const val BASE_URL = "https://www.nadjahacademy.com/api/v1/"
+// Base URL resolved from BuildConfig at runtime, fallback to live worker
+private val BASE_URL: String
+    get() = try {
+        val clazz = Class.forName("dz.nadjahacademy.app.BuildConfig")
+        (clazz.getField("BASE_URL").get(null) as? String)?.takeIf { it.isNotBlank() }
+            ?: "https://nadjah-academy-api.medsaidkichene.workers.dev/api/v1/"
+    } catch (e: Exception) {
+        "https://nadjah-academy-api.medsaidkichene.workers.dev/api/v1/"
+    }
 
 @Module
 @InstallIn(SingletonComponent::class)
